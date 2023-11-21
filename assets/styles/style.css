@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+    --orange: hsl(25, 97%, 53%);
+}
+
+.attribution { font-family: 'Times New Roman', Times, serif; text-align: center; color: var(--white);}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--veryDarkBlue);
+    color: var(--white);
+    font-family: 'Overpass', sans-serif;
+}
+
+/* dimension: 412 x 915 */
+
+/* RatingState Start*/
+#main-ratingstate-container {
+    width: 320px;
+    height: 450px;
+    margin: 40% auto;
+    padding: 8px 8px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 3.75%;
+    background-color:  hsl(213, 19%, 11%);
+}
+.icon_star-ratingstate-container {
+    margin: 2em 0 .5em 1.2em;
+}
+.icon_star-ratingstate-container img {
+    width: 1.2em;
+    border: 5px solid var(--darkBlue);
+    background-color: var(--darkBlue);
+    border-radius: 100%;
+    padding: 10px;
+}
+.title-ratingstate-container {
+    width: 100%;
+    margin: 8px 0 0 20px;
+    height: 4.15em;
+}
+.title-ratingstate-container h2 {
+    font-size: 28px;
+    color: var(--white);
+}
+.text-ratingstate-container {
+    width: 95%;
+    text-wrap: wrap;
+}
+.text-ratingstate-container p {
+    margin: 5px 0 35px 20px;
+    font-size: 13px;
+    color: var(--lightGrey);
+    line-height: 25px;
+}
+.rating-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 2.15em 0;
+}
+.buttonRating {
+    width: 3.2em;
+    height: 3.2em;
+    border: 5px solid var(--darkBlue);
+    background-color: var(--darkBlue);
+    border-radius: 100%;
+    color: var(--lightGrey);
+    font-size: 15px;
+    transition: 250ms;
+}
+.buttonRating:hover {
+    border-color: var(--orange);
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
+.buttonRating:focus {
+    border-color: var(--lightGrey);
+    background-color: var(--lightGrey);
+    color: var(--white);
+    cursor: pointer;
+}
+.button-ratingstate-container {
+    width: 100%;
+    height: 2.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-ratingstate-container button {
+    width: 90%;
+    padding: 0;
+    background-color: var(--orange);
+    border: 15px solid var(--orange);
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--white);
+    transition: 250ms;
+}
+.button-ratingstate-container button:hover {
+    background-color: var(--white);
+    border: 15px solid var(--white);
+    color: var(--orange);
+    cursor: pointer;
+}
+/* RatingState End */
+
+/* ThankState Start*/
+#main-thankstate-container {
+    width: 320px;
+    height: 450px;
+    padding: 8px 8px 8px 8px;
+    margin: 40% auto;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 3.75%;
+    background-color:  hsl(213, 19%, 11%);
+}
+.illustration-thankstate-container {
+    margin: 2em auto .8em auto;
+}
+.ratingselected-thankstate-container {
+    display: flex;
+    justify-content: center;
+}
+.ratingselected-thankstate-container p {
+    font-size: 15px;
+    padding: 0 .8em;
+    color: var(--orange);
+    background-color: var(--darkBlue);
+    border: 12px solid var(--darkBlue);
+    border-radius: 25px;
+} 
+.title-thankstate-container {
+    margin: 1.5em 0 .8em 0;
+}
+.title-thankstate-container h2 {
+    font-size: 35px;
+    margin: 0;
+}
+.text-thankstate-container p {
+    margin: 0;
+    text-align: center;
+    line-height: 25px;
+    color: var(--lightGrey);
+}
+
+
+/* ThankState End */
+
+.transitioning-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+  
+.transitioning-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+  
+#main-thankstate-container.transitioning-in {
+    opacity: 1;
+}
+
+.none {
+    display: none;
+}
+
+@media (min-width: 530px) {
+    #main-ratingstate-container {
+        width: 430px;
+        height: 460px;
+        margin: 28% auto;
+    }
+    .title-ratingstate-container {
+        margin-bottom: 15px;
+    }
+    .title-ratingstate-container h2 {
+        font-size: 35px;
+    }
+    .text-ratingstate-container p {
+        font-size: 18px;
+    }
+    .buttonRating {
+        width: 3.5em;
+        height: 3.5em;
+        font-size: 18px;
+    }
+    .button-ratingstate-container button {
+        font-size: 19px;
+        letter-spacing: 4px;
+    }
+
+    #main-thankstate-container {
+        width: 430px;
+        height: 460px;
+        margin: 28% auto;
+    }
+    .ratingselected-thankstate-container p {
+        font-size: 20px;
+        border-width: 12px;
+        border-radius: 25px;
+    }
+    .title-thankstate-container {
+        margin: 1.5em 0 .8em 0;
+    }
+    .title-thankstate-container h2 {
+        font-size: 45px;
+        margin: 0;
+    }
+    .text-thankstate-container {
+        width: 85%;
+    }
+}
+@media (min-width: 650px) {
+    #main-ratingstate-container {
+        width: 510px;
+        height: 510px;
+        margin: 9.37% auto;
+    }
+    .icon_star-ratingstate-container {
+        margin-left: 32px;
+    }
+    .title-ratingstate-container{
+        margin: 0 0 1.2em 2em;
+    }
+    .title-ratingstate-container h2 {
+        font-size: 38px;
+    }
+    .text-ratingstate-container {
+        margin: 0 0 0 12px;
+    }
+    .text-ratingstate-container p {
+        font-size: 20px;
+    }
+    .rating-container {
+        margin-bottom: 2.8em;
+    }
+    .buttonRating {
+        width: 3.5em;
+        height: 3.5em;
+        font-size: 20px;
+    }
+    .button-ratingstate-container button {
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+    .button-ratingstate-container {
+        margin-top: 1.2em;
+    }
+
+    #main-thankstate-container {
+        width: 510px;
+        height: 510px;
+        margin: 9.37% auto;
+    }
+    .ratingselected-thankstate-container p {
+        font-size: 25px;
+    }
+    .text-thankstate-container {
+        width: 90%;
+        margin-top: 1.2em;
+    }
+    .text-thankstate-container p{
+        font-size: 21px;
+    }
+}
