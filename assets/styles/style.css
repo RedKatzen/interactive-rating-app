@@ -15,9 +15,10 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--veryDarkBlue);
+    background: var(--veryDarkBlue);
     color: var(--white);
     font-family: 'Overpass', sans-serif;
+    
 }
 
 /* dimension: 412 x 915 */
@@ -32,7 +33,7 @@ body {
     flex-direction: column;
     border: 2px solid transparent;
     border-radius: 3.75%;
-    background-color:  hsl(213, 19%, 11%);
+    background: linear-gradient(to top, hsl(210, 18%, 9%), hsl(213, 19%, 11%));
 }
 .icon_star-ratingstate-container {
     margin: 2em 0 .5em 1.2em;
@@ -129,7 +130,7 @@ body {
     align-items: center;
     border: 2px solid transparent;
     border-radius: 3.75%;
-    background-color:  hsl(213, 19%, 11%);
+    background: linear-gradient(to top, hsl(210, 18%, 9%), hsl(213, 19%, 11%));
 }
 .illustration-thankstate-container {
     margin: 2em auto .8em auto;
