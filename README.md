@@ -1,5 +1,6 @@
 any question or commentary you can make in the FrontEnd Mentor's commentary section, 
 where is my solution. Or you can send a message on Discord (user: gaf0_0, id: 482746919177814018).
+And some code (part of script.js) I copied from "christianArk" (github), because I need moral.
 
 # Frontend Mentor - Interactive rating component
 
